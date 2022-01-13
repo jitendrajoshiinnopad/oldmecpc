@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CPC Training Classes</title>
+	
+	
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link href="./css/style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	
+	
+	
+	 <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+    <!-- font awesome icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../css/ionicons.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/plugins.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="icon" type="image/x-icon" href="image/logo/favicon.ico">
+    
+	
+</head>
+<style>
+	<!-- .myButton { -->
+	<!-- background-color:#44c767; -->
+	<!-- border-radius:5px; -->
+	<!-- border:2px solid #18ab29; -->
+	<!-- display:inline-block; -->
+	<!-- cursor:pointer; -->
+	<!-- color:#ffffff; -->
+	<!-- font-family:Arial; -->
+	<!-- font-size:20px; -->
+	<!-- padding:8px 76px; -->
+	<!-- text-decoration:none; -->
+	<!-- text-shadow:-1px -1px 0px #2f6627; -->
+	<!-- } -->
+	<!-- .myButton:hover { -->
+	<!-- background-color:#5cbf2a; -->
+	<!-- } -->
+	<!-- .myButton:active { -->
+	<!-- position:relative; -->
+	<!-- top:1px; -->
+	<!-- } -->
+	.submit-btn 
+	{
+    	color: #fff;
+    	background-color:#019ca0;
+   		font-weight: 700;
+    	<!-- height: 55px; -->
+    	<!-- padding: 8px 5px; -->
+    	font-size: 18px;
+    	border: none;
+    	display: block;
+    	<!-- width: 50%; -->
+    	text-transform: capitalize;
+		display:inline-block;
+	}
+	.note
+	{
+    	text-align: center;
+    	height: 80px;
+    	background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    	color: #fff;
+    	font-weight: bold;
+    	line-height: 80px;
+	}
+	.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+	.form-content
+	{
+    	padding: 5%;
+    	border: 1px solid #ced4da;
+   		margin-bottom: 2%;
+	}
+	.form-control
+	{
+    	border-radius:1.5rem;
+	}
+	.btnSubmit
+	{
+    	border:none;
+    	border-radius:1.5rem;
+    	padding: 1%;
+    	width: 20%;
+    	cursor: pointer;
+    	background: #0062cc;
+    	color: #fff;
+	}
+	.form-control
+	{
+	font-size: 1.5rem !Important;
+	}
+
+	@media (max-width: 576px)
+	{
+		.container 
+		{
+    		max-width: 350px !important;
+		}
+	}
+
+	.button5 
+	{
+			margin-top: 5px;
+	}
+	
+	body {
+    background: #f5f5f5
+}
+
+.rounded {
+    border-radius: 1rem
+}
+
+.nav-pills .nav-link {
+    color: #555
+}
+
+.nav-pills .nav-link.active {
+    color: white
+}
+
+input[type="radio"] {
+    margin-right: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+.error{
+font-size:11px;
+
+color:red}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/loading2.gif') 50% 50% no-repeat rgb(235 235 235);
+   /* rgb(235 235 235); */
+    opacity: .8;
+    display: none;
+}
+.customsize{
+font-size:13px;
+}
+</style>
+	
+<body>
+<div class="loader">
+
+</div>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="YidlLulS">
+	</script>
+ 	<!-- header start -->
+ 
+    <header class="header-area" style="background-color:white">
+      <!-- header top start -->
+      <div class="main-header d-none d-lg-block">
+
+        <!-- header middel start -->
+        <div class="header-middle-area sticky">
+          <div class="container">
+            <div class="row">
+              	<div class="col-md-2">
+                	<div class="logo">
+                 	 <a href="https://oldme.com//index.html"><img src="../image/logo/logo.png"></a>
+               	 	</div>
+             	 </div>
+              	 <div class="col-md-1">
+                
+              	 </div>
+              	 <div class="col-md-6">
+                		<div class="main-menu-area">
+                  			<div class="main-menu">
+                    			<div class="destop-menu">
+                      				<ul>
+                        				<li class="active">
+                          					<a href="https://oldme.com/index.html">Home</a>
+                        				</li>
+                        				<li>
+                          					<a href="https://oldme.com/CPC/classes.html">Classes</a>
+                        				</li>
+                        				<li class="static">
+                          					<a href="https://calendly.com/ehearns " target="_blank">Consultation</a>
+                        				</li>
+										<li class="static">
+                          					<a href="Employer.html" target="_blank">Employer </a>
+                        				</li>
+										<li class="static">
+                          					<a href="Payment.html" target="_blank">Payment </a>
+                        				</li>
+                        				<li>
+                          					<a href="#About" >About</a>
+                        				</li>
+                        				
+                      				</ul>
+                    			</div>
+                  			</div>
+                		</div>
+              	</div>
+			    <div class="col-md-1">
+                </div>
+			    <div class="col-md-2">
+                	<div class="logo">
+                  		<a href="https://oldme.com//index.html"><img src="../image/logo/aapc.jpg"></a>
+                	</div>
+              	</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header top end -->
+      <!-- mobile-header start -->
+      <div class="mobile-header d-lg-none d-md-block sticky">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="mobile-main-header">
+                <div class="mobile-logo">
+                  <a href="#"><img src="../image/logo/logo.png" alt="brand logo"></a>
+                </div>
+                <div class="mobile-menu-toggler">
+                  <div class="mobile-menu-btn">
+                    <div class="off-canvas-btn">
+                      <i class="fas fa-bars"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- header ends -->
+ 
+
+    <!--SECTION START-->
+    <section>
+	
+        <div class="bg-vector">
+            <div class="cpc-header">
+                <div class="title">
+                 </div>
+            </div>
+            <div class="container">
+                <div class="cpc-text">
+					<h1 style="font-size:20px"> Welcome to our Payment Module! </h1>
+					<h2 style="font-size:16px"> Our website doesn't store any credit card information. Our Bank of America Merchant Services encrpyts and secure any payment data required to complete the transaction(s). </h2>
+					
+					
+					
+					<div class="container py-1">
+    <!-- For demo purpose -->
+   
+        
+    </div> <!-- End -->
+    <div class="row">
+	<div  class="col"></div>
+        <div class="col-lg-6 mx-auto">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                        <!-- Credit card form tabs -->
+                        <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                            <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a> </li>
+                            <li class="nav-item"> <a data-toggle="pill"  class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                           
+                        </ul>
+                    </div> <!-- End -->
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+                        <!-- credit card info-->
+                        <div id="credit-card" class="tab-pane fade show active pt-3">
+                            <form role="form" method="post" id="submitform" onsubmit="event.preventDefault()">
+                                <div class="form-group"> <label for="username" style="float:left">
+                                        <h6 class="customsize">Card Owner</h6>
+                                    </label> <input type="text" name="username"  required class="form-control "> </div>
+                                <div class="form-group"> <label for="cardNumber" style="float:left">
+                                        <h6 class="customsize">Card number</h6>
+                                    </label>
+                                     <input type="number" name="cardNumber" id="cardnumber" maxlength="16" pattern="\d{16}"  class="form-control" required>
+                                      <!-- <span class="glyphicon glyphicon-lock"></span> -->
+                                    
+                                </div>
+								 <div class="form-group"> <label for="coursePrice" style="float:left">
+                                        <h6 class="customsize">Enter amount</h6>
+                                    </label>
+                                     <input type="number" id="courseprice" name="coursePrice" class="form-control" required>
+                                        
+                                    
+                                </div>
+                                <div class="row p-2">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+										  <h6 style="float:left" class="customsize">Month</h6>
+											<input type="number" placeholder="MM" name="" id="expirymonth" maxlength="2" pattern="\d{2}"  class="form-control" required > 
+											
+                                        	</div>
+										
+                                    </div>
+                                    <div class="col-sm-6">
+									<div class="form-group">
+									 <label for="expiredate" style="float:left">
+                                        <h6 class="customsize">Year</h6>
+                                    </label>
+                                        <input type="number" placeholder="YY" name="" id="expiryyear" name="expiredate" maxlength="4" pattern="\d{4}" class="form-control" required > 
+										</div>
+										</div>
+										
+										<div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label for="cvvcode" title="Three digit CV code on the back of your card">
+                                                <h6 class="customsize">CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="password"  class="form-control" name="cvvcode" id="cvvcode" maxlength="3" pattern="\d{3}" required> </div>
+                                    </div>
+                                    </div>
+                                
+								 
+                                <div class="card-footer"> <button type="submit" id="submit"class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                            <div class="" id="paypal_button"
+                                        style="margin-top:10px;">
+                                    </div>
+									  <div style="text-align:center; color:red; font-size:18px;" id="respones"></div>
+							</form>
+                        </div>
+                    </div> <!-- End -->
+                    <!-- Paypal info -->
+                    <div id="paypal" class="tab-pane fade pt-3">
+                       
+                    </div> <!-- End -->
+                    <!-- bank transfer info -->
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="col"> </div>
+	</div>
+</div>
+
+				</div>
+							
+               			</div>
+  			       		         			
+      		</div>
+     
+  	
+	
+   <!-- CPC411 Model close  -->
+    </section>
+    <!--SECTION END-->
+
+    
+	
+	 <!-- footer start -->
+        <footer class="site-footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-4 col-md-6 col-12">
+	                    <div class="single-footer">
+	                        <a href="#"> <img src="../image/logo/flogo.png" alt="" class="footer-logo"></a>
+	                        <p>OLDME CPC, LLC is working with the NY Black and Latino Legislatures to help rebuild Puerto Rico and US Virgin Island. OLDME plans to donate 2% of net profits annually to help support the Islands infrastructure and sustainable growth.</p>
+	                        <br>
+	                    </div>
+	                </div>
+	                <!-- end single footer -->
+	                <div class="col-lg-2 col-md-6 col-12">
+	                    <div class="single-footer">
+	                        <h5 class="footer-title">Company</h5>
+	                        <ul>
+	                            <li><a href="https://oldme.com/CPC/index.html">Home </a></li>
+                              	<li><a href="https://oldme.com/CPC/classes.html" target="_blank">Classes</a></li>
+	                            <li><a href="https://calendly.com/ehearns " target="_blank">Consultation</a></li>
+								<li><a href="https://oldme.com/CPC/CPC.html"target="_blank">CPC </a></li>
+                              	<li><a href="https://oldme.com/CPC/index.html#About">About us</a></li>
+	                            <li><a href="https://oldme.com/CPC/index.html#Contacts">Contact us</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	                <!-- end single footer -->
+	                <div class="col-lg-2 col-md-6 col-12">
+	                    <div class="single-footer foo-about">
+	                        <h5 class="footer-title">Useful Links</h5>
+	                        <ul>
+	                            <li><a href="../pdf/OLDME CPC terms and conditions.pdf" target="_blank">Terms &amp; Conditions</a></li>
+	                            <li><a href="../pdf/OLDME CPC Privacy Policy.pdf" target="_blank">Privacy Policy</a></li>
+	                            <li><a href="../pdf/OLDME CPC return-refund-policy .pdf" target="_blank">Refund Policy</a></li>
+	                        </ul>
+	                        <br>
+	                        <h5 class="footer-title">Follow us </h5>
+	                        <ul class="social-media">
+                                <li class="social-media-icon"><a class="" href="https://twitter.com/ehearns"><i class="icon fa fa-twitter"></i></a>
+                                </li>
+                                <li class="social-media-icon"><a class="" href="https://www.facebook.com/eddie.hearns"><i class="icon fa fa-facebook"></i></a>
+                                </li>
+                                <li class="social-media-icon"><a class="" href="https://www.linkedin.com/in/eddiehearns/" target="_blank"><i class="icon fa fa-linkedin"></i></a>
+                                </li>
+                                <li class="social-media-icon"><a class="" href="https://www.instagram.com/data_wiz_21/"><i class="icon fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+	                    </div>
+	                </div>
+	                <!-- end single footer -->
+	                <div class="col-lg-4 col-md-6 col-12">
+	                    <div class="single-footer foo-about">
+	                        <h5 class="footer-title">Get In Touch</h5>
+	                        <ul class="Contact1">
+                                <li>
+                                	<p><i class="fas fa-map-marker"></i> Address : P.O.Box 667 Middletown, NY, 10940.
+                                  </p>
+                                </li>
+                                <li>
+                                	<p><i class="fas fa-phone"></i> Phone : +1 347-920-0462</p>
+                                </li>
+                                <li>
+                                	<p><i class="fas fa-envelope"></i> Email : ehearns@oldme.com</p>
+                                </li>
+                            </ul>
+	                    </div>
+	                </div>
+	                <!-- end single footer -->
+					
+	            </div>
+	        </div>
+		</footer>
+		
+		<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+		
+        <div class="container-fluid" style="background-color: #fff;">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-12">
+                    <p style="text-align: center; padding-top: 10px; padding-bottom: 10px;">©2020 <a href="#">OLDME INC.</a> All Rights Reserved</p>
+                  </div>
+            </div>
+          </div>
+      <!-- footer end -->
+
+</body>
+</html>
+  <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+	
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  -->
+        <!-- integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"  -->
+        <!-- crossorigin="anonymous"> -->
+<!-- </script> -->
+
+<script src="./css/jquery.uriget.min.js"></script>
+<script type="text/javascript">
+
+
+debugger;
+
+
+
+var U_Id= "";
+var Course_Amount="";
+var Client_ID= "" ;
+$( document ).ready(function() {
+
+  var User_Id = $.uriGet('Value');
+<!-- var Pay_Amount = $.uriGet('Amount'); -->
+
+
+ U_Id = User_Id;
+ <!-- Course_Amount=Pay_Amount; -->
+ 
+  <!-- $("#payamount").text("$"+ Pay_Amount); -->
+  
+ 
+});
+debugger;
+  $('#submitform').validate({
+ 
+  //loader
+        rules: {
+                    <!-- firstname: { -->
+                        <!-- required: true -->
+                    <!-- }, -->
+                    <!-- lastname: { -->
+
+                        <!-- required: true -->
+                    <!-- }, -->
+                    cardnumber: {
+                        required: true,
+                    },
+                     expirymonth : { 
+                        
+                         required: true, 
+                      
+                     },
+                   expiryyear: { 
+
+                        required: true 
+                     },
+					  cvvcode: {
+
+                        required: true
+                    },
+					  courseprice: {
+
+                        required: true
+						
+                    },
+                   
+                },
+               
+			   //spnexpiredateerror
+
+submitHandler: function(form) {
+$('.loader').css('display','block');
+var form_data = new FormData(document.getElementById("submitform"));
+<!-- $("#submit").attr("disabled",true); -->
+
+debugger;
+var cardnumber= $("#cardnumber").val();
+var expirymonth= $("#expirymonth").val();
+var expiryyear= $("#expiryyear").val();
+var cvvcode= $("#cvvcode").val();
+var courseprice= $("#courseprice").val();
+var expirationDate= expiryyear +"-"+ expirymonth;
+Course_Amount=courseprice;
+var _data = {
+    "createTransactionRequest": {
+        "merchantAuthentication": {
+            "name": "2BPz77mgQLJ",
+            "transactionKey": "65f2JmyR97LdE6su"
+        },
+        "refId": "123456",
+        "transactionRequest": {
+            "transactionType": "authCaptureTransaction",
+            "amount": courseprice,
+            "payment": {
+                "creditCard": {
+                    "cardNumber": cardnumber,
+                    "expirationDate": expirationDate,
+                    "cardCode": cvvcode
+                }
+            },
+            
+        }
+    }
+}
+
+var transid = '';
+$.ajax({
+    type: 'POST',
+    url: 'https://api.authorize.net/xml/v1/request.api',
+    data: JSON.stringify(_data),
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    success: function(data){ 
+	debugger;
+	$('.loader').css('display','none');
+	$("#respones").empty();
+	if(data.messages.resultCode=='Ok'){
+	transid= data.transactionResponse.transId;	  
+	debugger;
+	$("#respones").empty();
+ $("#respones").append('This transaction has been approved. Please check your email.');
+            $("#submitform")[0].reset();
+          $("#submit").attr("disabled",false);
+	
+	 }
+	 else
+	 {
+	  $("#respones").append('The transaction was unsuccessful.');
+	 }
+},
+complete: function(){
+debugger;
+$('.loader').css('display','none');
+		 $.ajax({
+          type: 'POST',
+      <!-- url: 'http://localhost:1502/api/FamilyMonitoring/CPCCoursePayment', -->
+		url: 'https://apiyfsn.azurewebsites.net/api/FamilyMonitoring/CPCCoursePayment',
+		
+          data: { 'PayId': transid , 'UserId' : U_Id , 'Amount' : Course_Amount },
+		 
+          success: function(data){
+		  debugger;
+          $("#respones").empty();
+          
+          $("#submit").attr("disabled",false);
+          if(data=='success'){
+		
+            $("#submitform")[0].reset();
+            $("#respones").append('This transaction has been approved. Please check your email.');
+			}  
+          },
+          }); 
+          
+}     
+});
+
+         
+          }
+          });
+		  
+		 
+		 function myFunction(p1) {
+  return p1 * p2;   // The function returns the product of p1 and p2
+}
+
+// PayPAL
+
+ $.ajax({
+          type: 'get',
+      
+		url: 'https://apiyfsn.azurewebsites.net/api/FamilyMonitoring/PaymentKey',
+	
+		  contentType: "application/json; charset=utf-8",
+          cache: false,
+		  async: false,
+          <!-- contentType: false, -->
+          <!-- processData: false, -->
+		  crossDomain : true,
+          success: function(data){
+		  debugger;
+         
+          if(data !=''){
+		    Client_ID = data;
+         
+			}
+          },
+          });
+		  
+var Pay_id = '';
+var course_price= $("#courseprice").val();
+
+Course_Amount=course_price;
+paypal.Button.render({
+client: {                 production : Client_ID ,
+                         //sandbox: 'AY-pidy_YHh3S2GGEwfZWFTXsxLS1FdNIfWuNu_ZtYgWIt_rqWTjZnBi2X8ktIOtuJhANioojtMDHjBC',
+                         //production: 'AdZc_IBsp9aHEMeXPnuODYiAoRijJoGxI2QABVruarZItttVuFAxPgtxaHzYsZv-_Oy8efiNkgIzSZLI'  // Live oldme 
+    //                     production: this.paypalKey
+                     },
+env: 'production',
+style: {
+                        size: 'large',
+                        tagline: false,
+                        label: 'pay',
+                        shape: 'rect',
+                        color: 'white'
+                    },
+                    commit: true,
+payment: function(data, actions) {
+return actions.payment.create({
+                           payment: {
+                               transactions: [
+                                   {
+                                       amount: {
+                                           total: 1,//parseInt (Course_Amount),
+                                           currency: 'USD'
+                                       }
+                                   }
+                               ]
+                           }
+                       });
+
+},
+
+onAuthorize: function(data, actions) {
+
+                          
+                                 return actions.payment.execute()
+                                 
+                                    .then(() => {
+								        debugger;
+										return actions.payment.get().then(function(data) { 
+										
+										Pay_id = data.id; 
+		
+										}),
+										savepaypalidindb(Pay_id);
+										
+                                        $("#respones").append('This transaction has been approved. Please check your email.');
+                                    });
+                           
+                     },
+
+                     onCancel: () => {
+                    $("#respones").append('The transaction was unsuccessful.');
+                     }
+                 }, '#paypal_button');
+				 
+				 function savepaypalidindb(Pay_id){
+				 debugger;
+				  $.ajax({
+          type: 'get',
+      
+		url: 'https://apiyfsn.azurewebsites.net/api/FamilyMonitoring/CPCCoursePayment',
+		
+          data: { 'PayId': Pay_id , 'UserId' : U_Id , 'Amount' : Course_Amount},
+		  contentType: "application/json; charset=utf-8",
+          cache: false,
+		  async: false,
+          <!-- contentType: false, -->
+          <!-- processData: false, -->
+		  crossDomain : true,
+          success: function(data){
+		  debugger;
+          $("#respones").empty();
+          
+          $("#submit").attr("disabled",false);
+          if(data=='success'){
+		
+            $("#submitform")[0].reset();
+            $("#respones").append('This transaction has been approved. Please check your email.');
+			}  
+          },
+          });
+	
+				 
+				 }
+
+$(function() {
+$('[data-toggle="tooltip"]').tooltip()
+})
+ 
+          
+</script>
+	 
+	
+	

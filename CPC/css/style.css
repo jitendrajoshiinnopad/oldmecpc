@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+body {
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.bg-vector {
+    background:url(../images/serbg.png) center center;
+    background-repeat:no-repeat;
+    background-size:90%;
+
+}
+
+.cpc-header {
+    background-color: #019ca0;
+    padding: 50px;
+    height: 325px;
+    text-align: center;
+}
+.cpc-header .title {
+    text-align:center;
+}
+    .cpc-header .title h4 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+.cpc-text {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    margin-top: -200px;
+    text-align:center;
+}
+.cpc-text p{
+    font-size:16px;
+    line-height:200%;
+    margin:0;
+}
+
+.af-pricing {
+    margin-top:100px;
+}
+
+.af-pricing .title {
+
+
+}
+    .af-pricing .title h4 {
+        font-size: 25px;
+        font-weight: 700;
+        color: #019ca0;
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+
+.af-pricing ul{
+    padding:0;
+    
+}
+.af-pricing ul li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 270%;
+    padding-left: 30px;
+    position: relative;
+}
+.af-pricing ul li:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border: solid 3px #019ca0;
+    left: 0;
+    top: 18px;
+    border-radius: 100%;
+}
+
+
+.new-benefits {
+   
+}
+.new-benefits .beni-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 0.1);
+    padding: 30px;
+    position: relative;
+    min-height:420px;
+}
+.new-benefits .beni-box .title{
+    margin-bottom:30px;
+}
+    .new-benefits .beni-box .title h4 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 700;
+        color: #019ca0;
+        text-transform: uppercase;
+        line-height: 150%;
+    }
+
+.new-benefits .beni-box .beni-text p{
+    margin:0;
+    font-size:16px;
+    color:#555555;
+    line-height:190%;
+}
+
+.new-benefits .beni-vector {
+    height:100%;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+.new-benefits .beni-vector img {
+    margin:0 auto;
+}
+
+.new-benefits  .beni-cover {
+    position:relative;
+}
+.new-benefits .beni-cover .beni-border {
+    height: 100%;
+    width: 100%;
+    border: dashed 3px #36bfb5;
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+}
+
+.new-benefits .beni-cover .beni-border.beni-border-right {
+    left: auto;
+    right: -40px;
+    bottom: -40px;
+}
+
+.new-benefits .beni-row {
+    margin: 100px 0px;
+}
+
+@media(max-width:991px) {
+    .cpc-header .title h4, .af-pricing .title h4, .new-benefits .beni-box .title h4 {
+        font-size: 20px;
+    }
+    .cpc-text {
+        padding: 20px;
+  
+    }
+    .cpc-text p, .new-benefits .beni-box .beni-text p {
+        font-size: 14px;
+        line-height: 170%;
+    }
+    .af-pricing ul li {
+
+        font-size:18px;
+    }
+    .new-benefits .beni-cover .beni-border, .new-benefits .beni-cover .beni-border-right {
+        display:none;
+    }
+    .new-benefits .beni-box .beni-text p {
+        margin-top:20px;
+    }
+    .new-benefits .beni-row {
+        margin: 50px 0px;
+    }
+}
+@media(max-width:767px) {
+    .cpc-header .title h4, .af-pricing .title h4, .new-benefits .beni-box .title h4 {
+        font-size: 18px;
+    }
+    .af-pricing ul li {
+        font-size: 16px;
+        line-height: 120%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .af-pricing ul li:after {
+        height: 12px;
+        width: 12px;
+        top: 14px;
+    }
+    .af-pricing {
+        margin-top: 50px;
+    }
+    .new-benefits .beni-vector {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 0px 40px;
+    }
+}
